@@ -1,134 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio | Samyra Mangan Mben</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Samyra Mangan Mben</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 
-  <style>
-    @layer utilities {
-      .bg-soft-pink { background-color: #fdecef; }
-      .bg-soft-purple { background-color: #f5f0ff; }
-      .text-accent-pink { color: #db2777; }
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-  </style>
-</head>
-
-<body class="bg-soft-pink text-gray-800 font-serif">
-
-  <nav class="fixed top-0 w-full bg-white shadow-md z-50">
-    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-      <a href="#projects" class="text-2xl font text-accent-pink">
-        Samyra Mangan Mben
-      </a>
-      <div class="space-x-6 text-sm font-medium">
-        <a href="#about" class="hover:text-accent-pink transition">About</a>
-        <a href="#projects" class="hover:text-accent-pink transition">Projects</a>
-        <a href="#skills" class="hover:text-accent-pink transition">Skills</a>
-        <a href="#contact" class="hover:text-accent-pink transition">Contact</a>
-      </div>
-    </div>
-  </nav>
-
-  <main class="max-w-6xl mx-auto px-6 pt-32 grid grid-cols-1 lg:grid-cols-4 gap-10">
-    <div class="lg:col-span-3">
-      <div class="max-w-4xl mx-auto text-center">
-        <blockquote class="relative">
-          <i
-            class="fa-solid fa-quote-left text-4xl opacity-30 absolute -top-4 -left-1"
-          ></i>
-          <p
-            id="typewriter"
-            class="text-3xl font italic text-accent-pink mb-4"
-          >
-            Creativity is just connecting things.
-          </p>
-          <i
-            class="fa-solid fa-quote-right text-4xl opacity-30 absolute -bottom-4 -right-1"
-          ></i>
-          <footer class="mt-4 text-gray-400 text-lg">
-            ―
-            <span class="text-black">Steve Jobs</span>
-          </footer>
-        </blockquote>
-      </div>
-
-    <section id="about" class="py-16 text-center">
-      <p class="max-w-3xl mx-auto text-lg text-gray-700 leading-relaxed mb-8">
-        I'm an aspiring AI and Machine Learning developer, with some interest in IoT. My main focus is on building
-        meaningful projects using Python and data-driven approaches. My background combines
-        creativity, analytical thinking, and a strong interest in human behavior.
-      </p>
-      <div class="flex justify-center gap-4">
-        <a href="mailto:your.email@example.com"
-           class="bg-pink-500 text-white px-8 py-3 rounded-full hover:bg-pink-600 transition">
-          Hire Me 
-        </a>
-      </div>
-    </section>
-    </div>
-    <aside class="lg:col-span-1">
-      <div class="bg-white rounded-2xl shadow-md p-6 sticky top-32">
-        <h3 class="text-xl font-semibold text-accent-pink mb-4 text-center">
-          Top 10 Favorite Books
-        </h3>
-
-        <ol class="space-y-3 text-sm text-gray-700 list-decimal list-inside">
-          <li>1984 — George Orwell</li>
-          <li>Kim Ji-young: Born 1982 — Nam-joo Cho</li>
-          <li>The Silence of The Lambs — Thomas Harris</li>
-          <li>American Psycho — Bret Easton Ellis</li>
-        </ol>
-      </div>
-
-      <hr class="my-6 border-gray-200">
-      <h3 class="text-lg font-semibold text-accent-pink mb-4 text-center">
-        Top 10 Favorite Topics
-      </h3>
-      <div class="flex flex-wrap gap-2 justify-center text-sm">
-        <span class="topic-tag bg-pink-200 text-pink-800">#ArtificialIntelligence</span>
-        <span class="topic-tag bg-pink-100 text-pink-700">#MachineLearning</span>
-        <span class="topic-tag bg-rose-100 text-rose-700">#IoT</span>
-        <span class="topic-tag bg-purple-100 text-purple-700">#HumanBehavior</span>
-        <span class="topic-tag bg-purple-200 text-purple-800">#Psychology</span>
-        <span class="topic-tag bg-indigo-100 text-indigo-700">#NaturalLanguageProcessing</span>
-        <span class="topic-tag bg-rose-50 text-rose-600">#Storytelling</span>
-        <span class="topic-tag bg-rose-100 text-rose-700">#Investment</span>
-        <span class="topic-tag bg-gray-100 text-gray-700">#EthicalAI</span>
-        <span class="topic-tag bg-gray-200 text-gray-800">#Finance</span>
-      </div>
-    </aside>
-  </main>
-
-  <footer class="text-center py-6 text-gray-600 mt-10">
-    © 2026 Samyra Mangan Mben — Building intelligent systems with clarity and purpose
-  </footer>
-
-  <script>
-    window.addEventListener("DOMContentLoaded", (event) => {
-        typeWriter("typewriter", 50);
-        setTimeout(() => typeWriter("typewriter2", 50), 1500);
-      });
-      function typeWriter(elementId, speed) {
-        let i = 0;
-        let element = document.getElementById(elementId);
-        let txt = element.innerHTML;
-        element.innerHTML = "";
-
-        function type() {
-          if (i < txt.length) {
-            element.innerHTML += txt.charAt(i);
-            i++;
-            setTimeout(type, speed);
-          }
+    <style>
+      @layer utilities {
+        .bg-soft-pink { background-color: #fdecef; }
+        .bg-soft-purple { background-color: #f5f0ff; }
+        .text-accent-pink { color: #db2777; }
+        .topic-tag {
+          @apply px-3 py-1 rounded-full font-medium cursor-default transition-all duration-200 ease-in-out hover:scale-105 hover:shadow-sm;
         }
-        type();
       }
-  </script>
-</body>
+  
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+
+  <body class="bg-soft-pink text-gray-800 font-serif">
+    <nav class="fixed top-0 w-full bg-white shadow-md z-50">
+      <div
+        class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <a href="#projects" class="text-2xl font text-accent-pink">
+          Samyra Mangan Mben
+        </a>
+        <div class="space-x-6 text-sm font-medium">
+          <a href="#about" class="hover:text-accent-pink transition">About</a>
+          <a href="#projects" class="hover:text-accent-pink transition">
+            Projects
+          </a>
+          <a href="#skills" class="hover:text-accent-pink transition">Skills</a>
+          <a href="#contact" class="hover:text-accent-pink transition">
+            Contact
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <main
+      class="max-w-6xl mx-auto px-6 pt-32 grid grid-cols-1 lg:grid-cols-4 gap-10"
+    >
+      <div class="lg:col-span-3">
+        <div class="max-w-4xl mx-auto text-center">
+          <blockquote class="relative">
+            <i
+              class="fa-solid fa-quote-left text-4xl opacity-30 absolute -top-4 -left-1"
+            ></i>
+            <p
+              id="typewriter"
+              class="text-3xl font italic text-accent-pink mb-4"
+            >
+              Creativity is just connecting things.
+            </p>
+            <i
+              class="fa-solid fa-quote-right text-4xl opacity-30 absolute -bottom-4 -right-1"
+            ></i>
+            <footer class="mt-4 text-gray-400 text-lg">
+              ―
+              <span class="text-gray-800">Steve Jobs</span>
+            </footer>
+          </blockquote>
+        </div>
+
+        <section id="about" class="py-16 text-center">
+          <p
+            class="max-w-3xl mx-auto text-lg text-gray-700 leading-relaxed mb-8"
+          >
+            I'm an aspiring AI and Big Data Analyst, with some
+            interest in IoT. My main focus is on building meaningful projects
+            using Python and data-driven approaches. My background combines
+            creativity, analytical thinking, and a strong interest in human
+            behavior.
+          </p>
+          <div class="flex justify-center gap-4">
+            <a
+              href="mailto:your.email@example.com"
+              class="bg-pink-500 text-white px-8 py-3 rounded-full hover:bg-pink-600 transition"
+            >
+              Hire Me
+            </a>
+          </div>
+        </section>
+        <section id="projects" class="py-20">
+          <h2 class="text-3xl text-center font-semibold text-accent-pink mb-10">
+            Projects
+          </h2>
+
+          <!-- filters -->
+          <div class="flex justify-center flex-wrap gap-4 mb-12">
+            <button class="filter-btn bg-pink-400 text-white px-6 py-2 rounded-full hover:bg-pink-500 transition" data-filter="all">
+              All
+            </button>
+            <button class="filter-btn bg-pink-100 text-pink-700 px-6 py-2 rounded-full hover:bg-pink-200 transition" data-filter="python">
+              Python
+            </button>
+            <button class="filter-btn bg-pink-100 text-pink-700 px-6 py-2 rounded-full hover:bg-pink-200 transition" data-filter="ml">
+              Machine Learning
+            </button>
+            <button class="filter-btn bg-pink-100 text-pink-700 px-6 py-2 rounded-full hover:bg-pink-200 transition" data-filter="data">
+              Data Analysis
+            </button>
+          </div>
+
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <div
+              class="project-card bg-white rounded-xl shadow-md overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl"
+              data-category="python"
+            >
+              <img
+                src="https://construct-static.com/uploads/195552/eae7fd38-b155-4635-9d6b-f506422f0043/guess-the-number-small.jpg"
+                alt="Number Guessing Game"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-6">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">
+                  Number Guessing Game
+                </h3>
+                <p class="text-gray-600 mb-4 text-sm">
+                  A Python-based terminal game where the user guesses a randomly generated number.
+                  This project focuses on core programming logic, conditionals, and user input handling.
+                </p>
+                <a
+                  href="https://github.com/Flamingeas/Python/tree/main/Entra%C3%AEnements"
+                  target="_blank"
+                  class="inline-block text-pink-600 font-medium hover:underline"
+                >
+                  View on GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <aside class="lg:col-span-1">
+        <div class="bg-white rounded-2xl shadow-md p-6 sticky top-32">
+          <h3 class="text-xl font-semibold text-accent-pink mb-4 text-center">
+            Top 10 Favorite Books
+          </h3>
+
+          <ol class="space-y-3 text-sm text-gray-700 list-decimal list-inside">
+            <li>1984 — George Orwell</li>
+            <li>Kim Ji-young: Born 1982 — Nam-joo Cho</li>
+            <li>The Silence of The Lambs — Thomas Harris</li>
+            <li>Rich Dad Poor Dad — Robert Kiyosaki</li>
+            <li>American Psycho — Bret Easton Ellis</li>
+          </ol>
+        </div>
+
+        <hr class="my-6 border-gray-200" />
+        <h3 class="text-lg font-semibold text-accent-pink mb-4 text-center">
+          Top 10 Favorite Topics
+        </h3>
+        <div class="flex flex-wrap gap-2 justify-center text-sm">
+          <span class="topic-tag bg-pink-200 text-pink-800">
+            #ArtificialIntelligence
+          </span>
+          <span class="topic-tag bg-pink-100 text-pink-700">
+            #MachineLearning
+          </span>
+          <span class="topic-tag bg-rose-100 text-rose-700">#IoT</span>
+          <span class="topic-tag bg-purple-100 text-purple-700">
+            #HumanBehavior
+          </span>
+          <span class="topic-tag bg-purple-200 text-purple-800">
+            #Psychology
+          </span>
+          <span class="topic-tag bg-indigo-100 text-indigo-700">
+            #NaturalLanguageProcessing
+          </span>
+          <span class="topic-tag bg-rose-50 text-rose-600">#Storytelling</span>
+          <span class="topic-tag bg-rose-100 text-rose-700">#Investment</span>
+          <span class="topic-tag bg-gray-100 text-gray-700">#EthicalAI</span>
+          <span class="topic-tag bg-gray-200 text-gray-800">#Finance</span>
+        </div>
+      </aside>
+    </main>
+    <footer class="text-center py-6 text-gray-600 mt-10">
+      © 2026 Samyra Mangan Mben — Building intelligent systems with clarity and
+      purpose
+    </footer>
+    <script>
+      window.addEventListener("DOMContentLoaded", (event) => {
+          typeWriter("typewriter", 50);
+          setTimeout(() => typeWriter("typewriter2", 50), 1500);
+        });
+        function typeWriter(elementId, speed) {
+          let i = 0;
+          let element = document.getElementById(elementId);
+          let txt = element.innerHTML;
+          element.innerHTML = "";
+
+          function type() {
+            if (i < txt.length) {
+              element.innerHTML += txt.charAt(i);
+              i++;
+              setTimeout(type, speed);
+            }
+          }
+          type();
+        }
+    </script>
+  </body>
 </html>
