@@ -114,7 +114,10 @@
             <button class="filter-btn bg-pink-100 text-pink-700 px-6 py-2 rounded-full hover:bg-pink-200 transition" data-filter="data">
               Data Analysis
             </button>
-             <button class="filter-btn bg-pink-100 text-pink-700 px-6 py-2 rounded-full hover:bg-pink-200 transition" data-filter="web">
+             <button class="filter-btn bg-pink-100 text-pink-700 px-6 py-2 rounded-full hover:bg-pink-200 transition" data-filter="ai">
+              AI
+            </button>
+            <button class="filter-btn bg-pink-100 text-pink-700 px-6 py-2 rounded-full hover:bg-pink-200 transition" data-filter="web">
               Web
             </button>
              <button class="filter-btn bg-pink-100 text-pink-700 px-6 py-2 rounded-full hover:bg-pink-200 transition" data-filter="devops">
@@ -130,33 +133,49 @@
           </p>
 
           <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-
             <div
-              class="project-card bg-white rounded-xl shadow-md overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl"
-              data-category="python"
+              class="project-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300 hover:shadow-xl hover:-translate-y-1"
+              data-category="python" data-category="ai"
             >
               <img
-                src="https://construct-static.com/uploads/195552/eae7fd38-b155-4635-9d6b-f506422f0043/guess-the-number-small.jpg"
-                alt="Number Guessing Game"
+                src=""
+                alt="AI Recipe Generator API Project"
                 class="w-full h-48 object-cover"
               />
+
               <div class="p-6">
                 <h3 class="text-xl font-semibold text-gray-800 mb-2">
-                  Number Guessing Game
+                  AI Recipe Generator
                 </h3>
-                <p class="text-gray-600 mb-4 text-sm">
-                  A Python-based terminal game where the user guesses a randomly generated number.
-                  This project focuses on core programming logic, conditionals, and user input handling.
+
+                <p class="text-sm text-gray-600 mb-4">
+                  Web API & AI Agent (duo)Project — FastAPI, LangChain & PostgreSQL
                 </p>
-                 <div class="flex flex-wrap gap-2 text-xs mb-4">
+
+                <p class="text-gray-700 text-sm leading-relaxed mb-4">
+                  A full-stack backend project combining a RESTful API and an AI agent.
+                  Users submit ingredients through a FastAPI endpoint, and a LangChain-powered
+                  agent generates structured recipes (title, instructions) which are then
+                  persisted in a PostgreSQL database.
+                </p>
+
+                <div class="flex flex-wrap gap-2 text-xs mb-4">
                   <span class="px-3 py-1 rounded-full bg-green-100 text-green-700">Python</span>
+                  <span class="px-3 py-1 rounded-full bg-green-100 text-green-700">FastAPI</span>
+                  <span class="px-3 py-1 rounded-full bg-purple-100 text-purple-700">LangChain</span>
+                  <span class="px-3 py-1 rounded-full bg-blue-100 text-blue-700">PostgreSQL</span>
+                  <span class="px-3 py-1 rounded-full bg-indigo-100 text-indigo-700">SQLAlchemy</span>
+                  <span class="px-3 py-1 rounded-full bg-gray-100 text-gray-700">REST API</span>
+                  <span class="px-3 py-1 rounded-full bg-yellow-100 text-yellow-700">AI Agent</span>
                 </div>
+
                 <a
-                  href="https://github.com/Flamingeas/Python/tree/main/Entra%C3%AEnements"
+                  href="https://github.com/chopinenjoyer/recette"
                   target="_blank"
+                  rel="noopener noreferrer"
                   class="inline-block text-m font-medium text-pink-600 hover:text-pink-700 transition"
                 >
-                  View on GitHub
+                  Source Code
                 </a>
               </div>
             </div>
@@ -186,6 +205,7 @@
                   <a
                     href="#"
                     target="_blank"
+                    rel="noopener noreferrer"
                     class="inline-block text-m font-medium text-pink-600 hover:text-pink-700 transition"
                   >
                     Live Demo
@@ -235,10 +255,55 @@
                   rel="noopener noreferrer"
                   class="inline-block text-m font-medium text-pink-600 hover:text-pink-700 transition"
                 >
-                  View on GitHub
+                  Private School GitHub
                 </a>
               </div>
             </div>
+
+            <div
+              class="project-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300 hover:shadow-xl hover:-translate-y-1"
+              data-category="web"
+            >
+              <img
+                src="#"
+                alt="Job Board Web Application"
+                class="w-full h-48 object-cover"
+              />
+
+              <div class="p-6">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">
+                  Be Nexus (Job Board Web App)
+                </h3>
+
+                <p class="text-sm text-gray-600 mb-4">
+                  Full-Stack Group Project
+                </p>
+
+                <p class="text-gray-700 text-sm leading-relaxed mb-4">
+                  A complete job board platform featuring a RESTful backend,
+                  relational database design, authentication, and an admin dashboard
+                  for managing job offers, users, and applications.
+                </p>
+
+                <div class="flex flex-wrap gap-2 text-xs mb-4">
+                  <span class="px-3 py-1 rounded-full bg-indigo-100 text-indigo-700">PHP</span>
+                  <span class="px-3 py-1 rounded-full bg-blue-100 text-blue-700">JavaScript</span>
+                  <span class="px-3 py-1 rounded-full bg-blue-100 text-blue-700">MySQL</span>
+                  <span class="px-3 py-1 rounded-full bg-teal-100 text-teal-700">REST API</span>
+                  <span class="px-3 py-1 rounded-full bg-gray-100 text-gray-700">Team Project</span>
+                </div>
+
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-block text-m font-medium text-pink-600 hover:text-pink-700 transition"
+                >
+                Private School GitHub
+                </a>
+              </div>
+            </div>
+
 
             <div class="project-card bg-white rounded-xl shadow-md overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl" data-category="web"
             >
@@ -266,14 +331,44 @@
                   <a
                     href="https://github.com/Flamingeas/my-portfolio"
                     target="_blank"
+                    rel="noopener noreferrer"
                     class="inline-block text-m font-medium text-pink-600 hover:text-pink-700 transition"
                   >
-                    View on GitHub
+                    Source Code
                   </a>
                 </div>
               </div>
             </div>
-
+            <div
+              class="project-card bg-white rounded-xl shadow-md overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl"
+              data-category="python"
+            >
+              <img
+                src="https://construct-static.com/uploads/195552/eae7fd38-b155-4635-9d6b-f506422f0043/guess-the-number-small.jpg"
+                alt="Number Guessing Game"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-6">
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">
+                  Number Guessing Game
+                </h3>
+                <p class="text-gray-600 mb-4 text-sm">
+                  A Python-based terminal game where the user guesses a randomly generated number.
+                  This project focuses on core programming logic, conditionals, and user input handling.
+                </p>
+                 <div class="flex flex-wrap gap-2 text-xs mb-4">
+                  <span class="px-3 py-1 rounded-full bg-green-100 text-green-700">Python</span>
+                </div>
+                <a
+                  href="https://github.com/Flamingeas/Python/tree/main/Entra%C3%AEnements"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-block text-m font-medium text-pink-600 hover:text-pink-700 transition"
+                >
+                  Source Code
+                </a>
+              </div>
+            </div>
           </div>
         </section>
       </div>
