@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio | Samyra Mangan Mben</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <style>
       .bg-soft-pink { background-color: #fdecef; }
@@ -52,7 +53,7 @@
       class="max-w-8xl mx-auto px-6 pt-60 sm:pt-40 md:pt-32 grid grid-cols-1 lg:grid-cols-4 gap-10"
     >
       <div class="lg:col-span-3">
-        <div class="max-w-4xl mx-auto text-center">
+        <div id="about" class="max-w-4xl mx-auto text-center">
           <blockquote class="relative">
             <i
               class="fa-solid fa-quote-left text-4xl opacity-30 absolute -top-4 -left-1"
@@ -91,6 +92,47 @@
               Hire Me
             </a>
           </div>
+          <aside class="hidden lg:block absolute right-6 top-32 w-full max-w-xs">
+            <div class="bg-white rounded-2xl shadow-md p-6 sticky top-32 space-y-8">
+              <section id="favorite-books">
+                <h3 class="text-xl font-semibold text-accent-pink mb-4 text-center">
+                  Favorite Books
+                </h3>
+                <ol class="space-y-3 text-sm text-gray-700 list-decimal list-inside">
+                  <li>1984 — George Orwell</li>
+                  <li>Kim Ji-young: Born 1982 — Cho Nam-joo</li>
+                  <li>Mindhunter: Inside the FBI's Elite Serial Crime Unit  — John E. Douglas, Mark Olshaker</li>
+                  <li>Trading in the Zone — Mark Douglas</li>
+                  <li>Rich Dad Poor Dad — Robert Kiyosaki</li>
+                  <li>The Silence of the Lambs — Thomas Harris</li>
+                  <li>The Horla — Guy de Maupassant</li>
+                  <li>American Psycho — Bret Easton Ellis</li>
+                  <li>The Psychology of Money — Morgan Housel</li>
+                  <li>I Want to Die but I Want to Eat Tteokbokki — Baek Sehee</li>
+                </ol>
+              </section>
+
+              <hr class="border-gray-200" />
+              <section id="favorite-topics">
+                <h3 class="text-xl font-semibold text-accent-pink mb-4 text-center">
+                  Favorite Topics
+                </h3>
+
+                <div class="flex flex-wrap gap-2 justify-center text-sm">
+                  <span class="topic-tag bg-pink-200 text-pink-800">#ArtificialIntelligence</span>
+                  <span class="topic-tag bg-pink-100 text-pink-700">#MachineLearning</span>
+                  <span class="topic-tag bg-rose-100 text-rose-700">#IoT</span>
+                  <span class="topic-tag bg-purple-100 text-purple-700">#K-dramas</span>
+                  <span class="topic-tag bg-purple-200 text-purple-800">#Psychology</span>
+                  <span class="topic-tag bg-indigo-100 text-indigo-700">#NaturalLanguageProcessing</span>
+                  <span class="topic-tag bg-rose-50 text-rose-600"><a href="https://www.wattpad.com/user/Flamingeas">#Storytelling</a></span>
+                  <span class="topic-tag bg-rose-100 text-rose-700"><a href="https://www.cmegroup.com/education.html#learn">#Investment</a></span>
+                  <span class="topic-tag bg-gray-100 text-gray-700"><a href="https://theses.hal.science/tel-04767331/">#EthicalAI</a></span>
+                  <span class="topic-tag bg-gray-200 text-gray-800"><a href="https://www.cmegroup.com/education.html#learn">#FinancialMarkets</a></span>
+                </div>
+              </section>
+            </div>
+          </aside>
         </section>
         
         <section id="projects" class="py-20">
@@ -165,7 +207,7 @@
                 </div>
                 <a
                   href="https://github.com/Flamingeas"
-                  class="inline-block text-pink-600 font-medium hover:underline"
+                  class="inline-block text-m font-medium text-pink-600 hover:text-pink-700 transition"
                 >
                   Source Code
                 </a>
@@ -545,46 +587,50 @@
             </div>
           </div>
         </section>
+        <section
+          class="block lg:hidden w-full mx-auto my-10 px-6"
+        >
+          <div class="bg-white rounded-2xl shadow-md p-6 space-y-8">
+             <section id="favorite-books">
+                <h3 class="text-xl font-semibold text-accent-pink mb-4 text-center">
+                  Favorite Books
+                </h3>
+                <ol class="space-y-3 text-sm text-gray-700 list-decimal list-inside">
+                  <li>1984 — George Orwell</li>
+                  <li>Kim Ji-young: Born 1982 — Cho Nam-joo</li>
+                  <li>Mindhunter: Inside the FBI's Elite Serial Crime Unit  — John E. Douglas, Mark Olshaker</li>
+                  <li>Trading in the Zone — Mark Douglas</li>
+                  <li>Rich Dad Poor Dad — Robert Kiyosaki</li>
+                  <li>The Silence of the Lambs — Thomas Harris</li>
+                  <li>The Horla — Guy de Maupassant</li>
+                  <li>American Psycho — Bret Easton Ellis</li>
+                  <li>The Psychology of Money — Morgan Housel</li>
+                  <li>I Want to Die but I Want to Eat Tteokbokki — Baek Sehee</li>
+                </ol>
+              </section>
+
+              <hr class="border-gray-200" />
+              <section id="favorite-topics">
+                <h3 class="text-xl font-semibold text-accent-pink mb-4 text-center">
+                  Favorite Topics
+                </h3>
+
+                <div class="flex flex-wrap gap-2 justify-center text-sm">
+                  <span class="topic-tag bg-pink-200 text-pink-800">#ArtificialIntelligence</span>
+                  <span class="topic-tag bg-pink-100 text-pink-700">#MachineLearning</span>
+                  <span class="topic-tag bg-rose-100 text-rose-700">#IoT</span>
+                  <span class="topic-tag bg-purple-100 text-purple-700">#K-dramas</span>
+                  <span class="topic-tag bg-purple-200 text-purple-800">#Psychology</span>
+                  <span class="topic-tag bg-indigo-100 text-indigo-700">#NaturalLanguageProcessing</span>
+                  <span class="topic-tag bg-rose-50 text-rose-600"><a href="https://www.wattpad.com/user/Flamingeas">#Storytelling</a></span>
+                  <span class="topic-tag bg-rose-100 text-rose-700"><a href="https://www.cmegroup.com/education.html#learn">#Investment</a></span>
+                  <span class="topic-tag bg-gray-100 text-gray-700"><a href="https://theses.hal.science/tel-04767331/">#EthicalAI</a></span>
+                  <span class="topic-tag bg-gray-200 text-gray-800"><a href="https://www.cmegroup.com/education.html#learn">#FinancialMarkets</a></span>
+                </div>
+              </section>
+          </div>
+        </section>
       </div>
-      <aside class="lg:col-span-1">
-        <div class="bg-white rounded-2xl shadow-md p-6 sticky top-32 space-y-8">
-          <section id="favorite-books">
-            <h3 class="text-xl font-semibold text-accent-pink mb-4 text-center">
-              Favorite Books
-            </h3>
-            <ol class="space-y-3 text-sm text-gray-700 list-decimal list-inside">
-              <li>1984 — George Orwell</li>
-              <li>Kim Ji-young: Born 1982 — Nam-joo Cho</li>
-              <li>Mindhunter: Inside the FBI's Elite Serial Crime Unit  — John E. Douglas, Mark Olshaker</li>
-              <li>Trading in the Zone — Mark Douglas</li>
-              <li>Rich Dad Poor Dad — Robert Kiyosaki</li>
-              <li>The Silence of the Lambs — Thomas Harris</li>
-              <li>American Psycho — Bret Easton Ellis</li>
-              <li>The Psychology of Money — Morgan Housel</li>
-            </ol>
-          </section>
-
-          <hr class="border-gray-200" />
-          <section id="favorite-topics">
-            <h3 class="text-lg font-semibold text-accent-pink mb-4 text-center">
-              Favorite Topics
-            </h3>
-
-            <div class="flex flex-wrap gap-2 justify-center text-sm">
-              <span class="topic-tag bg-pink-200 text-pink-800">#ArtificialIntelligence</span>
-              <span class="topic-tag bg-pink-100 text-pink-700">#MachineLearning</span>
-              <span class="topic-tag bg-rose-100 text-rose-700">#IoT</span>
-              <span class="topic-tag bg-purple-100 text-purple-700">#K-dramas</span>
-              <span class="topic-tag bg-purple-200 text-purple-800">#Psychology</span>
-              <span class="topic-tag bg-indigo-100 text-indigo-700">#NaturalLanguageProcessing</span>
-              <span class="topic-tag bg-rose-50 text-rose-600"><a href="https://www.wattpad.com/user/Flamingeas">#Storytelling</a></span>
-              <span class="topic-tag bg-rose-100 text-rose-700"><a href="https://www.cmegroup.com/education.html#learn">#Investment</a></span>
-              <span class="topic-tag bg-gray-100 text-gray-700"><a href="https://theses.hal.science/tel-04767331/">#EthicalAI</a></span>
-              <span class="topic-tag bg-gray-200 text-gray-800"><a href="https://www.cmegroup.com/education.html#learn">#FinancialMarkets</a></span>
-            </div>
-          </section>
-        </div>
-      </aside>
     </main>
     <section id="contact" class="w-full mx-auto my-24 px-6">
       <h2 class="text-3xl font-semibold text-accent-pink mb-10 text-center">
